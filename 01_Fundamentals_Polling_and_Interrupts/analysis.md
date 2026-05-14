@@ -1,0 +1,29 @@
+analysis.md
+
+# Fundamentals
+
+## Concepts
+- GPIO input/output
+- Polling
+- Interrupts
+
+## Versions
+- Polling implementation
+- Interrupt implementation
+
+## Observations
+Interrupts reduce constant CPU polling and move toward event-driven design.
+
+## Polling Notes
+- CPU constantly reads pin input. digitalRead(button)
+- Simple but inefficient
+- Loop keeps running continuously
+
+## Interrupt Notes
+- Hardware triggers ISR automatically
+- Need debounce handling
+- ISR should stay short. 
+
+## Key Insight
+Polling is software-driven.
+Interrupts are hardware/event-driven.
