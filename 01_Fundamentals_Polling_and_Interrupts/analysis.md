@@ -27,3 +27,5 @@ Polling is software-driven.
 Interrupts are hardware/event-driven. loop() is still continuously running, but instead of reading GPIO hardware, loop() is checking for a software flag. 
 
 Even interrupt-based embedded systems will have while(1) or loop() running forever because embedded systems are continuous real-time systems. 
+
+Serial.available() => CPU is continuously asking, has any serial data arrived yet? Still polling-based event detection. 
